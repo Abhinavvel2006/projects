@@ -1,37 +1,110 @@
- body {
-    font-family: Arial, sans-serif; 
-    background: #e0f7fa; 
-    margin: 0; 
-    padding: 0; 
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      transition: background 0.5s, color 0.5s;
+      background-color: #0078ff;
     }
-.container { 
-    max-width: 400px; 
-    margin: 50px auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px; 
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+    .container {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 15px 20px;
+      border-radius: 15px;
+      text-align: center;
+      width: 280px;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+      transition: background 0.5s;
     }
-h1 { 
-    text-align: center;
-    color: #00796b; 
+
+    h2 {
+      font-size: 18px;
+      margin-bottom: 8px;
     }
-.weather-info { 
-    margin-top: 20px;
+
+    input {
+      width: 80%;
+      padding: 6px;
+      border: none;
+      border-radius: 6px;
+      margin-bottom: 8px;
+      font-size: 14px;
     }
-label, input {
-    display: block; 
-    width: 100%; 
-    margin-bottom: 10px; 
-  }
-button { 
-    background: #00796b; 
-    color: #fff; 
-    border: none; 
-    padding: 10px; 
-    border-radius: 4px; 
-    cursor: pointer; 
+
+    button {
+      padding: 6px 12px;
+      border: none;
+      border-radius: 6px;
+      background: red;
+      color: white;
+      cursor: pointer;
+      font-size: 14px;
+      margin-bottom: 10px;
+      transition: background 0.3s;
     }
-button:hover { 
-    background: #004d40; 
+
+    button:hover {
+      background-color:black;
     }
+
+    .weather {
+      font-size: 14px;
+    }
+
+    .weather img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .forecast {
+      margin-top: 8px;
+    }
+
+    .day {
+      display: inline-block;
+      width: 70px;
+      margin: 3px;
+      border-radius: 8px;
+      padding: 5px;
+      font-size: 12px;
+    }
+
+    .day img {
+      width: 28px;
+      height: 28px;
+    }
+
+    /* Light Theme */
+    .light {
+      background: linear-gradient(to bottom, #4facfe, #00f2fe);
+      color: #000;
+    }
+
+    .light .container {
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    .light .day {
+      background: rgba(255, 255, 255, 0.6);
+      color: #000;
+    }
+
+    /* Dark Theme */
+    .dark {
+      background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+      color: #fff;
+    }
+
+    .dark .container {
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    .dark .day {
+      background: rgba(255, 255, 255, 0.15);
+      color: #fff;
+    }
+  
